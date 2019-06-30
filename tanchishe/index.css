@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.begin, .switchMode{
+    width: 100px;
+    height: 30px;
+    margin: 10px auto;
+    border-radius: 10px;
+    line-height:30px;
+    text-align: center;
+    color: white;
+    background-color: #abcdef;
+    cursor: pointer;
+}
+
+.chess_board{
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    position: relative;
+    margin: 100px auto;
+    font-size: 0;
+    transition: transform 2s linear;
+}
+.square{
+    display: inline-block;
+    background-color: grey;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    border-left: 1px dashed lightgray;
+    border-top: 1px dashed lightgray;
+}
+.ball{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    font-size: 16px;
+    text-align: center;
+    line-height: 20px;
+    z-index: 2;
+}
+.T3D .ball{
+    background:radial-gradient(circle at 7px 7px,white,black);
+}
